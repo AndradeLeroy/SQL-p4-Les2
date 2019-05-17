@@ -11,3 +11,12 @@ VALUES
 UPDATE docenten
 SET voorletters = "P", achternaam ="Puk"
 WHERE docent_code="vlt03";
+
+
+ Voeg een nieuwe klas toe met klas_code 'lo9e-amo5'
+ 
+ 
+
+#3. Voeg een nieuwe klas toe met klas_code 'lo9e-amo5'
+INSERT INTO klassen (klas_code, slb_code, cohort, opleiding_code)
+VALUES("lo9e-amo5", "vlt03", "2019", "amo");
