@@ -36,3 +36,10 @@ INSERT INTO studenten(ov_nummer, achternaam, tussenvoegsel, voorletters, voornaa
 VALUES(97843, "Piet", "", "K", "Pietju", 1992-03-03, "1010AA", "Amsterdam", 60.5, 1.76, 1, 2019-05-15);
 
 
+
+#Opdracht 6. Koppel studenten met ov_nummer (97842, 97843) aan de klas 'lo9e-amo5'
+
+INSERT INTO klassen_studenten(klas_code, ov_nummer)
+VALUES("lo9e-amo5", 97842), ("lo9e-amo5", 97843);
+
+
