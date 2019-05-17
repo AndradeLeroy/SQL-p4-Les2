@@ -28,3 +28,11 @@ VALUES("lo9e-amo5", "vlt03", "2019", "amo");
 INSERT INTO studenten(ov_nummer, achternaam, tussenvoegsel, voorletters, voornaam, geboortedatum, postcode, plaats, gewicht, lengte, actief, inschrijvings_datum)
 VALUES(97842, "Piet", "", "J", "Pietje", 1992-03-03, "1010AA", "Amsterdam", 60.5, 1.75, 1, 2019-05-15);
 
+
+
+#5. Voeg een nieuwe student toe met ov_nummer=97843
+
+INSERT INTO studenten(ov_nummer, achternaam, tussenvoegsel, voorletters, voornaam, geboortedatum, postcode, plaats, gewicht, lengte, actief, inschrijvings_datum)
+VALUES(97843, "Piet", "", "K", "Pietju", 1992-03-03, "1010AA", "Amsterdam", 60.5, 1.76, 1, 2019-05-15);
+
+
