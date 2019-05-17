@@ -1,0 +1,5 @@
+#SELECT * FROM studenten where active =1;
+INSERT INTO docenten(docent_code, voorletters, tussenvoegsel, achternaam)
+VALUES
+("akr03", "M.B", "van", "Akerboom"),
+("akr04", "M.C", "van", "Akerboom");
