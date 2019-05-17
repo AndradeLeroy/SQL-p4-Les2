@@ -47,3 +47,22 @@ VALUES("lo9e-amo5", 97842), ("lo9e-amo5", 97843);
 #Opdracht7. Verwijder de records uit de tabel klassen_studenten waar ov_nummer=97843
 
 DELETE FROM klassen_studenten WHERE ov_nummer=97843;
+
+
+
+#Opdracht8. Toon van de studenten met ov_nummer>97000:De volledige naam, klas_code en de volledige naam van de slb-er
+
+SELECT CONCAT(studenten.voorletters, studenten.voornaam, studenten.tussenvoegsel, studenten.achternaam) AS volledigeNaamStudent, klassen_studenten.klas_code,
+CONCAT(docenten.voorletters, docenten.tussenvoegsel, docenten.achternaam) AS VolledigeNaamSLB
+
+FROM studenten
+
+INNER JOIN klassen_studenten
+ON klassen_studenten.ov_nummer = studenten.ov_nummer
+
+INNER JOIN klassen
+ON klassen.klas_code = klassen_studenten.klas_code
+
+INNER JOIN docenten
+on docenten.docent_code = klassen.slb_code
+WHERE studenten.ov_nummer = 97000; #wel resultaat bij ov_nummer = 97842
