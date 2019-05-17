@@ -3,3 +3,11 @@ INSERT INTO docenten(docent_code, voorletters, tussenvoegsel, achternaam)
 VALUES
 ("akr03", "M.B", "van", "Akerboom"),
 ("akr04", "M.C", "van", "Akerboom");
+
+
+
+#2. Wijzig de voorletters en achternaam van de docent met docent_code='vlt03'
+
+UPDATE docenten
+SET voorletters = "P", achternaam ="Puk"
+WHERE docent_code="vlt03";
