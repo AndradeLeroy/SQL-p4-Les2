@@ -43,3 +43,7 @@ INSERT INTO klassen_studenten(klas_code, ov_nummer)
 VALUES("lo9e-amo5", 97842), ("lo9e-amo5", 97843);
 
 
+
+#Opdracht7. Verwijder de records uit de tabel klassen_studenten waar ov_nummer=97843
+
+DELETE FROM klassen_studenten WHERE ov_nummer=97843;
